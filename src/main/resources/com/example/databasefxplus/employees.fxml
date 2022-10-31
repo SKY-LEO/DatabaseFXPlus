@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databasefxplus.EmployeesController">
+   <children>
+      <TextField fx:id="id" layoutX="278.0" layoutY="197.0" prefHeight="26.0" prefWidth="260.0" promptText="id" />
+      <TextField fx:id="surname" layoutX="278.0" layoutY="233.0" prefHeight="26.0" prefWidth="260.0" promptText="surname" />
+      <TextField fx:id="name" layoutX="278.0" layoutY="268.0" prefHeight="26.0" prefWidth="260.0" promptText="name" />
+      <TextField fx:id="patronymic" layoutX="278.0" layoutY="304.0" prefHeight="26.0" prefWidth="260.0" promptText="patronymic" />
+      <TableView fx:id="employeeGrid" layoutX="12.0" layoutY="14.0" prefHeight="170.0" prefWidth="526.0" />
+      <Button fx:id="btnAddLine" layoutX="466.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#btn_AddLine_Click" text="Add line">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFilterByJobTitle" layoutX="82.0" layoutY="218.0" mnemonicParsing="false" onMouseClicked="#btn_FilterByJobTitle_Click" text="Filter by job title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#btn_Back_Click" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="in_brigade_id" layoutX="278.0" layoutY="371.0" prefHeight="26.0" prefWidth="260.0" promptText="in_brigade_id" />
+      <Button fx:id="btnFilterBySpecialty" layoutX="78.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#btn_FilterBySpecialty_Click" text="Filter by specialty">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="telephone_num" layoutX="278.0" layoutY="338.0" prefHeight="26.0" prefWidth="260.0" promptText="telephone_num" />
+      <TextField fx:id="bounty" layoutX="278.0" layoutY="405.0" prefHeight="26.0" prefWidth="260.0" promptText="bounty" />
+      <Button fx:id="btnFilterByInBrigadeId" layoutX="64.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#btn_FilterByInBrigadeId_Click" text="Filter by in brigade id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="specialty" layoutX="11.0" layoutY="371.0" prefHeight="26.0" prefWidth="260.0" />
+      <ComboBox fx:id="job_title" layoutX="11.0" layoutY="405.0" prefHeight="26.0" prefWidth="260.0" />
+   </children>
+</AnchorPane>

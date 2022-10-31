@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databasefxplus.Info_about_sicksController">
+   <children>
+      <TextField fx:id="id" layoutX="278.0" layoutY="197.0" prefHeight="26.0" prefWidth="260.0" promptText="id" />
+      <TextField fx:id="surname" layoutX="278.0" layoutY="233.0" prefHeight="26.0" prefWidth="260.0" promptText="surname" />
+      <TextField fx:id="name" layoutX="278.0" layoutY="268.0" prefHeight="26.0" prefWidth="260.0" promptText="name" />
+      <TextField fx:id="patronymic" layoutX="278.0" layoutY="304.0" prefHeight="26.0" prefWidth="260.0" promptText="patronymic" />
+      <TableView fx:id="info_about_sicksGrid" layoutX="12.0" layoutY="14.0" prefHeight="170.0" prefWidth="526.0" />
+      <Button fx:id="btnAddLine" layoutX="466.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#btn_AddLine_Click" text="Add line">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#btn_Back_Click" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="address" layoutX="278.0" layoutY="371.0" prefHeight="26.0" prefWidth="260.0" promptText="address" />
+      <Button fx:id="btnFilterBySocialStatus" layoutX="71.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#btn_FilterBySpecialty_Click" text="Filter by social sttus">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="telephone_num" layoutX="278.0" layoutY="338.0" prefHeight="26.0" prefWidth="260.0" promptText="telephone_num" />
+      <TextField fx:id="birth_date" layoutX="278.0" layoutY="405.0" prefHeight="26.0" prefWidth="260.0" promptText="birth date" />
+      <ComboBox fx:id="social_status" layoutX="11.0" layoutY="405.0" prefHeight="26.0" prefWidth="260.0" />
+   </children>
+</AnchorPane>
